@@ -1,0 +1,14 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=big5">
+<title>檔案上傳(限制 < 2G)</title>
+</head>
+<body>
+檔案上傳(限制 < 2G)</br>
+<form action="upload.php" method="post" enctype="multipart/form-data">
+<input type="hidden" name="max_file_size" value="2000000000">
+<input type="file" name="myfile">
+<input type="submit" value="上傳">
+</form>
+</body>
+</html>

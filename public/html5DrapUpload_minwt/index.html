@@ -1,0 +1,74 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<html> 
+<head> 
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="author" content="男丁格爾&梅干扣肉" />
+	<meta name="Copyright" content="www.minwt.com版權所有" />
+	<meta name="keywords" content="梅問題,教學網,photoshop教學,flex教學,javascript教學,css教學,網頁教學,架站教學,wordperss教學">
+	<meta name="description" content="透過Html5拖拉上傳，遇到同檔名時，自動更名+1，同時回傳上傳後的網址" />
+	<title>梅問題‧教學網-範例展示【HTML5拖拉上傳】</title>
+<style> 
+	body{font-size:12px;}
+	#box{width:350px; height:400px; overflow:hidden; margin:0 auto;}
+	#drop {border: 10px dashed #ccc; width: 330px; height: 335px; margin: 10px auto;}
+	#drop.hover { border: 10px dashed #333; }
+	
+	
+	#status {
+		width: 350px;
+		height: 25px;
+		margin:0 auto;
+		text-align:center;
+		line-height:25px;
+		color:#fff;
+	}
+	
+	.fail{background:red;}
+	.success{background:#6C0;}
+	
+	#list {
+		width: 210px;
+		font-size: 10px;
+		float: left;
+		margin-left: 10px;
+	}
+	.addedIMG {
+		width: 100px;
+		height: 100px;
+	}
+</style> 
+<script src="jquery.min-1.4.2.js"></script> 
+<script src="html5uploader.js"></script>
+<script src="dump.js"></script>
+<script>
+	
+</script> 
+</head> 
+ 
+<body onload="new uploader('drop', 'status', 'uploader.php', 'list');"> 
+	<div id="box"> 		 
+		<div id="drop"></div> 		
+	</div> 
+    
+    <div id="status">此瀏覽器不支援拖拉上傳</div>
+	<div id="list"></div> 
+
+
+<!-- 偵測瀏覽是否支援拖拉上傳以及拖拉變框變色 -->  
+<script language="javascript">
+  var drop = document.getElementById('drop'),
+   	  state = document.getElementById('status');
+
+	if (typeof window.FileReader === 'undefined') {
+	  state.className = 'fail';
+	} else {
+	  state.className = 'success';
+	  state.innerHTML = '拖拉上傳已啟動';
+	}
+	 
+	drop.ondragover = function (){ this.className = 'hover'; return false; };
+	drop.ondragend = function (){ this.className = ''; return false; };
+  </script>  
+</body> 
+</html>

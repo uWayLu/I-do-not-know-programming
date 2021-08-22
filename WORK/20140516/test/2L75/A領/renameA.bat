@@ -1,0 +1,12 @@
+rename 93*.doc 93A.doc
+rename 94*.doc 94A.doc
+rename 95*.doc 95A.doc
+rename 96*.doc 96A.doc
+rename 97*.doc 97A.doc
+rename 98*.doc 98A.doc
+rename 99*.doc 99A.doc
+rename 100*.doc 100A.doc
+rename 101*.doc 101A.doc
+rename 102*.doc 102A.doc
+rename 103*.doc 103A.doc
+rename 104*.doc 104A.doc

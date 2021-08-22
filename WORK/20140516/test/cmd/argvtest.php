@@ -1,0 +1,1 @@
+<?php//print_r($_SERVER);$url = $_SERVER['DOCUMENT_ROOT'];echo "<pre>".$url;echo  $_SERVER['argv'][1]."</pre>";?>

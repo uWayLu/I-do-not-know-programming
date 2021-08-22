@@ -1,0 +1,56 @@
+.menu {
+    border: 1px dashed gray;
+    width: 500px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px;
+    text-align: center;
+}
+ 
+.main {
+    border: 1px dashed gray;
+    width: 500px;
+    margin-top: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px;
+}
+ 
+.display {
+    border: 1px dashed gray;
+    width: 500px;
+    margin-top: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px;
+}
+ 
+input {
+    margin: 2px;
+}
+
+#display_sleep {
+	width: 100%;
+	height: auto;
+	border: solid 2px red;
+}
+
+#display_sleep > ul {
+	width: 100%;
+	list-style: none;
+	margin: 5px auto 5px auto;
+}
+
+#display_sleep > ul > li {
+	border: solid 1px;
+	width: 20%;
+	line-height: auto;
+	float: left;
+	text-align: center;
+	margin: 2px 2px 2px 2px;
+}
+
+
+/* http://pydoing.blogspot.tw/2012/11/PHP-encryptor-css.html */
+/* 更多selector自己爬文 */
